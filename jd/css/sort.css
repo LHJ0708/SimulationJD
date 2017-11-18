@@ -1,0 +1,203 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+/* 去除按住元素 会出现的蓝色背景 */
+* {
+  /* tap的意思是单击 */
+  /* transparent 意思是透明 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.jdm-sort {
+  width: 100%;
+  height: 100%;
+}
+
+.jdm-sort .jdm-sort-header {
+  width: 100%;
+  height: 45px;
+  background-image: url("../images/header-bg.png");
+  background-size: 1px 44px;
+  border-bottom: 1px solid #999;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.jdm-sort .jdm-sort-header .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  padding: 10px 11px;
+  box-sizing: border-box;
+  /* background-origin 调整背景图片的左上角的顶点位置
+     background-clip
+  */
+  background-origin: content-box;
+  background-clip: content-box;
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -21px 2px;
+}
+
+.jdm-sort .jdm-sort-header .search-box {
+  width: 100%;
+  height: 44px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.jdm-sort .jdm-sort-header input {
+  width: 100%;
+  height: 30px;
+  margin-top: 7px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+.jdm-sort .jdm-sort-header .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+  padding: 10px 11px;
+  box-sizing: border-box;
+  /* background-origin 调整背景图片的左上角的顶点位置
+     background-clip
+  */
+  background-origin: content-box;
+  background-clip: content-box;
+  background-image: url("../images/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -60px 2px;
+}
+
+.jdm-sort .jdm-sort-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 45px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+
+}
+
+.jdm-sort .jdm-sort-main .jdm-sort-aside {
+  width: 90px;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+.jdm-sort  .jdm-sort-aside ul {
+  width: 100%;
+  height: 100%;
+}
+
+.jdm-sort  .jdm-sort-aside li {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.jdm-sort  .jdm-sort-aside li.active {
+  border-right: none;
+  background-color: #fff;
+  color:#c91f13;
+}
+
+.jdm-sort .jdm-sort-main .jdm-sort-section {
+  flex:1;
+  /* height: 100%; */
+  padding: 0 10px;
+  /*
+
+  91998
+    overflow-x 
+    overflow-y
+    overflow: auto scroll(强制出现滚动条) hidden(溢出隐藏)
+  */
+  overflow-y: auto;
+
+  /* background-color: greenyellow; */
+  background-color: #fff;
+}
+
+.jdm-sort .jdm-sort-main .tuijian {
+  width: 100%;
+  padding-top: 18px;
+}
+
+.jdm-sort .jdm-sort-main .tuijian h2 {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 17px;
+}
+
+.jdm-sort .jdm-sort-main .tuijian ul {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.jdm-sort .jdm-sort-main .tuijian li {
+  float: left;
+  width: 33.33333%;
+  height: 45px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 45px;
+  font-size: 13px;
+}
+
+.daogou {
+  margin-top: 15px;
+}
+.daogou  h2 {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.daogou ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.daogou li {
+  float: left;
+  width: 33.333333%;
+}
+
+.daogou li a {
+  display: block;
+  width: 100%;
+}
+
+.daogou li img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.daogou li b {
+  display: block;
+  text-align: center;
+  font-weight: normal;
+}
+
